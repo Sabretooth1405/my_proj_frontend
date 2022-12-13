@@ -1,0 +1,50 @@
+body {
+    background-color: aliceblue;
+    height: 100vh;
+}
+
+
+
+.container {
+    width: 40%;
+    margin: 5% auto;
+    background-color: white;
+    padding: 2%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+form .label {
+    margin-bottom: 3px;
+}
+
+form .inp {
+    margin-top: 3px;
+}
+
+input {
+    width: 100%;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+}
+
+button:hover,
+.new-expense button:active {
+    background-color: #510674;
+    border-color: #510674;
+}
+
+.item {
+    border: 1px solid black;
+    padding: 3%;
+}
