@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 90vh 1fr auto;
+    grid-template-areas:
+        'header header header'
+        'info info info'
+        'postgres mysql oracle'
+        'footer footer footer'
+    ;
+    background-image: url('./tech.jpg');
+    color: white;
+    min-width: 350px;
+}
+
+
+header {
+    grid-area: header;
+    display: flex;
+    padding: 0;
+    padding-left: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: rgb(25, 25, 25);
+}
+
+.hero {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.hero i {
+    align-self: flex-start;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    align-self: flex-end;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+}
+
+.nav-links-container {
+    margin-right: 4rem;
+    font-size: 1.5rem;
+}
+
+#info {
+    grid-area: info;
+    text-align: center;
+    color: white;
+   height:100px
+
+}
+
+.info {
+    width: 60%;
+    margin: 5% auto;
+    background-color: rgb(25, 25, 25);
+    opacity: 80%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 5%;
+    min-width: 600px;
+}
+
+.info h2 {
+    text-decoration: underline;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2%;
+}
+
+.info p {
+    font-size: 1.25rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+
+#postgres {
+    grid-area: postgres;
+    background-color: rgb(25, 25, 25);
+    opacity: 75%;
+    border-right: 1px solid white;
+    font-size: 22px;
+    border-bottom: 1px solid white;
+}
+
+
+
+h2 {
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 24px;
+}
+
+a {
+    color: white;
+}
+
+
+
+.status-container {
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+#mysql {
+    grid-area: mysql;
+    background-color: rgb(25, 25, 25);
+    opacity: 75%;
+    border-right: 1px solid white;
+    font-size: 22px;
+    border-bottom: 1px solid white;
+}
+
+#oracle {
+    grid-area: oracle;
+    background-color: rgb(25, 25, 25);
+    opacity: 75%;
+    border-right: 1px solid white;
+    font-size: 22px;
+    border-bottom: 1px solid white;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+h3 {
+    font-size: 24px;
+}
+
+a {
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.status-container {
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2rem;
+}
+
+
+
+.container {
+    display: block;
+    
+}
+
+img {
+    margin: 1rem auto;
+    width: 200px;
+    height: 250px;
+}
+
+.img-container {
+
+    text-align: center;
+}
+
+
+
+
+section h2{
+    margin-top: 1rem;
+}
+
+
+
+
+
+@media(max-width:1100px) {
+    body {
+        grid-template-areas:
+            'header header header'
+            'info info info'
+            'postgres postgres postgres'
+            'mysql mysql mysql'
+            'oracle oracle oracle'
+            'footer footer footer'
+        ;
+        grid-template-rows: 10vh 90vh 1fr 1fr  1fr auto;
+        
+    }
+    #postgres,
+    #mysql,
+    #oracle{
+        min-width: 600px;
+    }
+    .container{
+        width: 80%;
+
+    }
+    .status-container{
+        width: 80%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    grid-area: footer;
+    background-color: rgb(25, 25, 25);
+    display: block;
+}
+
+footer ul {
+    margin-top: 0.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+
+.twitter {
+    color: #1DA1F2;
+}
+
+.linkdein {
+    color: #0077B5
+}
+
+.cc_container {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+small {
+    font-size: 14px;
+}
